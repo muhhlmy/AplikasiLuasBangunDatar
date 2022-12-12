@@ -34,7 +34,7 @@ elif choice == 'Luas Layang-layang':
 
 elif choice == 'Luas Lingkaran':
     Phi = st.number_input('Masukkan Phi : ')
-    r = st.number_input('Masukkan Jari-jari : ')
+    r = st.number_input('Masukkan Jari-jari : ', 0)
     Button = st.button('Hitung')
     if Button:
         L = Phi * r**2
