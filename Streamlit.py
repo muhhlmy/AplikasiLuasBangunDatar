@@ -1,34 +1,16 @@
 import streamlit as st
 
 st.write("""
-# Aplikasi Luas Segitiga
-Ini adalah Aplikasi Menghitung Luas Segitiga Sederhana Menggunakan Streamlit
+# Aplikasi Program Warnet
+Ini adalah tugas kedua dari Matkul yang telah saya selesaikan
 """)
 
-alas   = st.number_input("Masukkan Alas",0)
-tinggi = st.number_input("Masukkan Tinggi",0)
-hitung = st.button('Hitung Luas')
+Jam = st.input_number("Ingin Menyewa berapa jam? : ")
 
-if hitung:
-    luas = 0.5 * alas * tinggi
-    st.success(f"Luas dari segitiga tersebut adalah {luas}")
+if Jam <= 3:
+    Biaya = (Jam * 6000)
+    st.write("Biaya yang harus dibayar adalah : " + str(Biaya))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+elif Jam > 3:
+    Biaya = (18000 + ((Jam - 3) * 5000))
+    st.write("Biaya yang harus dibayar adalah : " + str(Biaya))
